@@ -1,0 +1,149 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.hashmap.scada-iot</groupId>
+  <artifactId>opcuaproducer</artifactId>
+  <version>1.0.0.0</version>
+  <name>opc producer</name>
+  
+    <description>This is the OPC UA connector for kafka</description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <storm.version>0.9.1.2.1.1.0-385</storm.version>
+        <storm.kafka.version>0.9.1.2.1.1.0-385</storm.kafka.version>
+        <hadoop.version>2.4.0.2.1.1.0-385</hadoop.version>
+        <hbase.version>0.98.0.2.1.1.0-385-hadoop2</hbase.version>
+        <log4j.version>1.2.17</log4j.version>
+        <storm.hdfs.version>0.9.1.2.1.2.0-402</storm.hdfs.version>
+        <hive.version>0.13.0.2.1.1.0-385</hive.version>
+    </properties>
+  
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+   <dependencies>
+   		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcpkix-jdk15on</artifactId>
+			<version>1.47</version>
+		</dependency>
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcprov-jdk15on</artifactId>
+			<version>1.47</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.2.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpcore</artifactId>
+			<version>4.2.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpcore-nio</artifactId>
+			<version>4.2.4</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>2.2.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.2.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.2.3</version>
+		</dependency>
+        <!-- Storm Kafka Dependencies -->
+        <dependency>
+            <groupId>org.apache.storm</groupId>
+            <artifactId>storm-kafka</artifactId>
+            <version>${storm.kafka.version}</version>
+        </dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+		<dependency>
+			<groupId>com.yammer.metrics</groupId>
+			<artifactId>metrics-core</artifactId>
+			<version>2.2.0</version>
+		</dependency>
+		
+
+         
+	<!-- <dependency>
+            <groupId>org.opcfoundation</groupId>
+            <artifactId>ua-stack</artifactId>
+            <version>1.02.336.8</version>
+        </dependency>	
+        <dependency>
+            <groupId>org.opcfoundation</groupId>
+            <artifactId>ua-stack</artifactId>
+            <version>1.02.336.8</version>
+        </dependency> -->
+        
+        <dependency>
+			<groupId>org.scala-lang</groupId>
+			<artifactId>scala-library</artifactId>
+			<version>2.10.4-RC1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.madgag</groupId>
+			<artifactId>sc-light-jdk15on</artifactId>
+			<version>1.47.0.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.madgag</groupId>
+			<artifactId>scpkix-jdk15on</artifactId>
+			<version>1.47.0.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.madgag</groupId>
+			<artifactId>scprov-jdk15on</artifactId>
+			<version>1.47.0.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.7</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.7</version>
+		</dependency>
+   </dependencies>
+   
+   
+    <repositories>
+        <repository>
+            <id>hortonworks</id>
+            <url>http://repo.hortonworks.com/content/repositories/releases/</url>
+        </repository>
+    </repositories>
+</project>
