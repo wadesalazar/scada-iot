@@ -1,0 +1,6 @@
+{"equipmentId":"a126", "time":1430020256,"tagName":"sensor246","value":35}
+
+{"topic":"Simulation Examples.Functions", "tagName":"Simulation Examples.Functions.Ramp1", "tagDataType":"Long", "tagValue":335, "acquistionTimestamp":1430644620, "quality":"GOOD", "serverName":"Kepware.KEPServerEX.V5", "serverIp":"99.9.9.99", "serverReportTimestamp":1430644620}
+
+
+Kepware.KEPServerEX.V5|99.9.9.99|Simulation Examples.Functions|1430644620

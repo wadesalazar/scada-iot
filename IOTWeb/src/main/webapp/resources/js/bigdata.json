@@ -1,0 +1,30 @@
+ [{
+        "name": "FMC-01",
+        "performance": 90, 
+        "radius": 5,
+        "tci":80,
+        "significance": "Running 90",
+        "date": "2011-08-14",
+        "latitude": 29.07,
+        "longitude": -76.43
+      },{
+        "name": "FMC-2",
+        "performance": 100,
+        "radius": 5,
+        "tci":40,
+        "significance": "Running 70",
+        "date": "2013-11-22",
+        "latitude": 17.07,
+        "longitude": -18.43
+
+      },{
+        "name": "FMC-3",
+        "performance": 70,
+        "radius": 5,
+        "tci":70,
+        "significance": "Poor signal",
+        "date": "1961-10-31",
+        "latitude": 15.482,
+        "longitude": -89.5854
+      }
+    ]

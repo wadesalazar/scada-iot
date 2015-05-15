@@ -1,0 +1,42 @@
+body{
+	background-color: #ededed;
+}
+.wrapper{
+  margin-top:60px;
+}
+/*bootstrap custom*/
+.navbar {
+    border-radius: 0px;
+}
+.panel-default > .panel-heading {
+    background-color: #ed1b2c;
+    border-color: #ed1b2c;
+    color: #fff;
+}
+
+/* multi-series line  */
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+
+#chart_container{
+  padding: 20px;
+  box-shadow:0 1px 1px rgba(0, 0, 0, 0.05);
+background-color: #fff;
+border-radius:4px;
+margin-bottom:0px;
+}

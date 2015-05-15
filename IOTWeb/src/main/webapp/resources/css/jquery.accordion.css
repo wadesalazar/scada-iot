@@ -1,0 +1,61 @@
+
+/* Requirements */
+
+[data-accordion] [data-content] {
+    overflow: hidden;
+    max-height: 0;
+}
+
+/* Basic Theme */
+[data-accordion] {
+    line-height: 1;
+}
+
+[data-control],
+[data-content] > * {
+    /*-webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;*/
+    
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+    
+}
+/*[data-control]:hover,
+[data-content]:hover > * {
+    background-color: #4e66ff;
+   margin-left: -10px;
+    
+}*/
+[data-content] [data-accordion] {
+    border: 0;
+    padding: 0;
+}
+
+[data-accordion] [data-control] {
+    position: relative;
+    padding-left: 30px;
+}
+
+[data-accordion] > [data-control]:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 12px;
+    font-size: 25px;
+    font-weight: 200;
+    color: #444;
+    height: 15px;
+    width: 24px;
+    background: url('../images/down.png') center center no-repeat;
+    background-size: 50%;
+}
+
+[data-accordion].open > [data-control]:before {
+    -webkit-transform: rotate(-180deg); 
+    -ms-transform: rotate(-180deg); 
+    transform: rotate(-180deg); 
+}
+[data-accordion] > [data-control]:hover, [data-content] a:hover{
+    color:#fff;
+}
