@@ -94,7 +94,16 @@
 			<version>2.2.0</version>
 		</dependency>
 		
-
+        <dependency>
+            <groupId>org.opcfoundation.ua</groupId>
+            <artifactId>stack</artifactId>
+            <version>1.02.336.8</version>
+        </dependency>
+        <dependency>
+            <groupId>com.prosysopc.ua</groupId>
+            <artifactId>client</artifactId>
+            <version>2.1.0-436</version>
+        </dependency>
          
 	<!-- <dependency>
             <groupId>org.opcfoundation</groupId>

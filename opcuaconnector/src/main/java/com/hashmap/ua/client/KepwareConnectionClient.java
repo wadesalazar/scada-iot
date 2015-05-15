@@ -1,4 +1,4 @@
-package com.hashmap.ua.Client;
+package com.hashmap.ua.client;
 
 import java.io.IOException;
 import java.net.URISyntaxException;

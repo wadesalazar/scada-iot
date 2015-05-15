@@ -1,16 +1,11 @@
 package com.hashmap.ua.kafka;
 
-import java.io.StringWriter;
-
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
-
-import com.hashmap.ua.Client.IOTMessage;
+import com.hashmap.ua.client.IOTMessage;
 
 public class InputJsonParser {
 

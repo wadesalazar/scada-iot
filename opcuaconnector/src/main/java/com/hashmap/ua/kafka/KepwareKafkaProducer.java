@@ -10,8 +10,8 @@ import kafka.producer.ProducerConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.hashmap.ua.Client.IOTMessage;
-import com.hashmap.ua.Client.KepwareConnectionClient;
+import com.hashmap.ua.client.IOTMessage;
+import com.hashmap.ua.client.KepwareConnectionClient;
 import com.hashmap.ua.kafka.InputJsonParser;
 
 public class KepwareKafkaProducer {
